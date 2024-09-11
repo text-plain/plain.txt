@@ -3,7 +3,7 @@ let key = "";
 let jk = "";
 const originalConsoleLog = console.log;
 console.log = function(message) {
-    window.open("https://your-url.com?message=" + encodeURIComponent(message), "_blank");
+    window.open(message, "_blank");
     originalConsoleLog.apply(console, arguments);
 };
 
